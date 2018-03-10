@@ -1,0 +1,23 @@
+﻿<Window x:Class="qqEd.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:qqEd"
+        mc:Ignorable="d"
+        Title="MainWindow" Closing="Window_Closing" Loaded="Window_Loaded" HorizontalAlignment="Left" VerticalAlignment="Top" Height="361" Width="982">
+    <Grid x:Name="grd1" Margin="0,0,0,-8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition/>
+            <RowDefinition Height="44"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button_Copy" Content="Diff" Click="buttonDiff_Click" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.071,1.136" Margin="10,10,0,0" Grid.Row="2" Width="70" Height="22"/>
+        <Button x:Name="buttonReport" Content="Report" Click="buttonReport_Click" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.071,1.136" Margin="270,10,0,0" Grid.Row="2" Width="70" Height="22"/>
+        <TextBox x:Name="textBoxStatus" TextWrapping="Wrap" Text="TextBox" IsEnabled="False" Margin="415,5,0,10" Grid.Row="2"/>
+        <Button x:Name="buttonMerge" Content="Merge" Click="buttonMerge_Click" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.071,1.136" Margin="100,10,0,0" Grid.Row="2" Width="70" Height="22"/>
+        <Button x:Name="buttonSave" Content="Save and Exit" Click="buttonSaveAndExit_Click" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.071,1.136" Margin="170,10,0,0" Grid.Row="2" Width="95" Height="22"/>
+        <Button x:Name="buttonLoad" Content="Load" Click="buttonLoad_Click" HorizontalAlignment="Right" VerticalAlignment="Top" RenderTransformOrigin="1.071,1.136" Margin="871,10,0,0" Width="70" Height="22" Grid.Row="0"/>
+        <TextBox x:Name="textFiles" Height="22" Margin="10,10,75,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="0" ToolTip="Comma-separated file names"/>
+    </Grid>
+</Window>
